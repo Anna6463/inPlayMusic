@@ -35,15 +35,21 @@ font-weight: 700;
 }
 .playlists{
   display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  
 }
 .playlist{
   background-color: rgb(28, 28, 28);
-  width: 570px;
+  min-width: 570px;
   height: 540px;
   border-radius: 4px;
+  margin-bottom: 15px;
+  flex: 0 1 30%;
+  
 }
 
-.playlist:not(:last-child){
+.playlist:not(:nth-child(2n)){
   margin-right: 12px;
 }
 
